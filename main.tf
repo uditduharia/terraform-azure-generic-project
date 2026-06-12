@@ -67,7 +67,7 @@ module "linux_vm" {
       nic_name            = "linux-nic"
       location            = var.location
       resource_group_name = module.rg.rg_name
-      vm_size = "Standard_D2s_v3"
+      vm_size             = "Standard_D2s_v3"
 
       subnet_id = module.subnet.subnet_ids["subnet1"]
 
@@ -90,7 +90,7 @@ module "windows_vm" {
       nic_name            = "windows-nic"
       location            = var.location
       resource_group_name = module.rg.rg_name
-      vm_size = "Standard_D2s_v3"
+      vm_size             = "Standard_D2s_v3"
 
       subnet_id = module.subnet.subnet_ids["subnet2"]
 
